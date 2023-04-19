@@ -13,7 +13,7 @@ const BookDetail = () => {
   useEffect(() => {
     const fetchBook = async () => {
       try {
-        setLoading(true); 
+        setLoading(true);
         await axios(`https://www.googleapis.com/books/v1/volumes/${id}`).then(
           (res) => {
             setBookDetail(res.data); // Kitap detaylarını alınan verilerle set eder
@@ -22,10 +22,10 @@ const BookDetail = () => {
       } catch (error) {
         console.error(error);
       } finally {
-        setLoading(false); 
+        setLoading(false);
       }
     };
-    fetchBook(); 
+    fetchBook();
   }, [id, setLoading]); // id ve setLoading değiştiğinde useEffecti tekrar çağır
 
   return (
@@ -59,7 +59,9 @@ const BookDetail = () => {
                   {bookDetail.volumeInfo.title}
                 </h2>
                 <p className="text-gray-400 text-xl font-medium">
-                  {bookDetail.volumeInfo.authors.join(", ")}
+                  {bookDetail.volumeInfo.authors
+                    ? bookDetail.volumeInfo.authors.join(", ")
+                    : "Yazar Bilgisi Yok"}
                 </p>
                 <p className="text-lg leading-relaxed">
                   {bookDetail.volumeInfo.description}
