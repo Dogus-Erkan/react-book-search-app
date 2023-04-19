@@ -3,7 +3,7 @@
 
 <p>Bu uygulama, Google Books API kullanılarak kitap araması yapmanızı sağlar.</p>
 
-<h3>Uygulama Demo Linki: </h3>
+<h3>Uygulama Demo Linki: https://peaceful-raindrop-39912b.netlify.app/</h3>
 
 <h2>Kullanılan Teknolojiler</h2>
 <p>Bu uygulama React, Axios ve Tailwind kullanılarak geliştirilmiştir.</p>
