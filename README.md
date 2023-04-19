@@ -1,3 +1,15 @@
+# patika-weather-app
+<h1>www.patika.dev</h1>
+
+<p>Bu uygulama, Google Books API kullanılarak kitap araması yapmanızı sağlar.</p>
+
+<h3>Uygulama Demo Linki: </h3>
+
+<h2>Kullanılan Teknolojiler</h2>
+<p>Bu uygulama React, Axios ve Tailwind kullanılarak geliştirilmiştir.</p>
+
+<img src='./src/img/app.PNG'>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
